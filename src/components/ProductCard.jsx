@@ -23,7 +23,7 @@ const ProductCard = ({ _id, name, image, price }) => {
   return (
     <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg overflow-hidden hover:shadow-xl transition cursor-pointer relative">
       <Link to={`/product/${_id}`}>
-        <img src={`http://localhost:5000/images/${product.image}`} alt={name} className="w-full h-52 object-cover" />
+        <img src={`https://ab7dae03-a654-4f5e-b84e-6b7924e2581c-00-etotsp6h5au4.sisko.replit.dev/images/${product.image}`} alt={name} className="w-full h-52 object-cover" />
         <div className="p-4">
           <h3 className="text-lg font-semibold text-gray-800 dark:text-white">{name}</h3>
           <p className="text-indigo-600 font-bold text-lg">PKR{price}</p>
