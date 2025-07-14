@@ -85,7 +85,7 @@ useEffect(() => {
   if (!user) return null;
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-100 to-blue-100 dark:from-gray-900 dark:to-gray-800 px-4 py-10">
+    <div className="py-10 flex items-center justify-center bg-gradient-to-br from-gray-100 to-blue-100 dark:from-gray-900 dark:to-gray-800 px-4 py-10">
       <div className="w-full max-w-lg bg-white dark:bg-gray-900 shadow-2xl rounded-2xl p-8">
         <h2 className="text-2xl font-bold text-center mb-6 dark:text-white">🧾 Payment Details</h2>
 
