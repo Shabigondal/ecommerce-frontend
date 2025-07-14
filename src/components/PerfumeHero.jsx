@@ -5,7 +5,7 @@ const PerfumeHero = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white">
+    <div className="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white">
       
       {/* Watches Hero */}
       <section className="flex flex-col-reverse md:flex-row items-center justify-between px-8 py-20 max-w-7xl mx-auto">
