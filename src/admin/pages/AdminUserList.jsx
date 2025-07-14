@@ -13,7 +13,7 @@ const AdminUserList = () => {
 
   const fetchUsers = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/admin/users');
+      const res = await axios.get('https://ab7dae03-a654-4f5e-b84e-6b7924e2581c-00-etotsp6h5au4.sisko.replit.dev/api/admin/users');
       setUsers(res.data);
     } catch (err) {
       toast.error('Failed to load users');
@@ -27,7 +27,7 @@ const AdminUserList = () => {
   const handleDelete = async (id) => {
     if (!window.confirm('Are you sure you want to delete this user?')) return;
     try {
-      await axios.delete(`http://localhost:5000/api/admin/users/${id}`);
+      await axios.delete(`https://ab7dae03-a654-4f5e-b84e-6b7924e2581c-00-etotsp6h5au4.sisko.replit.dev/api/admin/users/${id}`);
       toast.success('User deleted');
       fetchUsers();
     } catch (err) {
@@ -42,7 +42,7 @@ const AdminUserList = () => {
 
   const handleSave = async () => {
     try {
-      await axios.put(`http://localhost:5000/api/admin/users/${editingId}/role`, { role });
+      await axios.put(`https://ab7dae03-a654-4f5e-b84e-6b7924e2581c-00-etotsp6h5au4.sisko.replit.dev/api/admin/users/${editingId}/role`, { role });
       toast.success('Role updated');
       setEditingId(null);
       fetchUsers();
