@@ -55,7 +55,7 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center dark:bg-gray-900 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-4 dark:from-gray-900 dark:to-gray-800 transition-colors duration-500">
+    <div className="flex items-center justify-center dark:bg-gray-900 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-4 dark:from-gray-900 dark:to-gray-800 transition-colors duration-500">
       <div className="bg-white/30 dark:bg-white/10 backdrop-blur-lg shadow-xl rounded-xl p-8 w-full max-w-md animate-fade-in">
         <h2 className="text-3xl font-bold text-white text-center mb-6">Welcome Back</h2>
         <form onSubmit={handleSubmit} className="space-y-6">
