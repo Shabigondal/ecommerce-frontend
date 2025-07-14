@@ -28,7 +28,7 @@ const Register = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 px-4 dark:from-gray-900 dark:to-gray-800 transition-colors duration-500">
+    <div className="py-10 flex items-center justify-center bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 px-4 dark:from-gray-900 dark:to-gray-800 transition-colors duration-500">
       <div className="bg-white/30 dark:bg-white/10 backdrop-blur-lg shadow-xl rounded-xl p-8 w-full max-w-md animate-fade-in">
         <h2 className="text-3xl font-bold text-white text-center mb-6">Create Account</h2>
         <form onSubmit={handleSubmit} className="space-y-6">
