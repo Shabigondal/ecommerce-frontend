@@ -75,7 +75,7 @@ const AdminProductList = () => {
     if (!window.confirm('Are you sure you want to delete this product?')) return;
 
     try {
-      await axios.delete(`http://localhost:5000/api/admin/products/${id}`);
+      await axios.delete(`https://ab7dae03-a654-4f5e-b84e-6b7924e2581c-00-etotsp6h5au4.sisko.replit.dev/api/admin/products/${id}`);
       toast.success('Deleted successfully');
       fetchProducts();
     } catch (err) {
@@ -160,7 +160,7 @@ const AdminProductList = () => {
               <tr key={p._id} className="border-b dark:border-gray-700">
                 <td className="p-3">
                   {p.image ? (
-                    <img src={`http://localhost:5000/images/${p.image}`} alt={p.name} className="w-16 h-16 object-cover rounded" />
+                    <img src={`https://ab7dae03-a654-4f5e-b84e-6b7924e2581c-00-etotsp6h5au4.sisko.replit.dev/images/${p.image}`} alt={p.name} className="w-16 h-16 object-cover rounded" />
                   ) : (
                     <span className="italic text-gray-400">No image</span>
                   )}
