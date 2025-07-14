@@ -13,7 +13,7 @@ const Register = () => {
   const registerUser = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/register', formData);
+      const res = await axios.post('https://ab7dae03-a654-4f5e-b84e-6b7924e2581c-00-etotsp6h5au4.sisko.replit.dev/api/auth/register', formData);
       alert(res.data.message);
       navigate('/verify', { state: { email: formData.email } }); // 👈 Redirect with email
     } catch (err) {
