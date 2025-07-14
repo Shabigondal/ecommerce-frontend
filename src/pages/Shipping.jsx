@@ -41,7 +41,7 @@ const Shipping = () => {
   };
 
   return (
-    <div className="min-h-screen px-4 py-8 flex justify-center bg-gradient-to-br from-blue-100 to-green-100 dark:from-gray-900 dark:to-gray-800 transition-colors">
+    <div className="px-4 py-8 flex justify-center bg-gradient-to-br from-blue-100 to-green-100 dark:from-gray-900 dark:to-gray-800 transition-colors">
       <div className="w-full max-w-lg bg-white dark:bg-gray-900 shadow-lg rounded-2xl p-8">
         <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-6 text-center">
           🚚 Shipping Information
