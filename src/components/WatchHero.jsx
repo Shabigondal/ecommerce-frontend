@@ -1,0 +1,33 @@
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
+const WatchHero = () => {
+  const navigate = useNavigate();
+
+  return (
+    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white">
+      
+      {/* Watches Hero */}
+      <section className="flex flex-col-reverse md:flex-row items-center justify-between px-8 py-20 max-w-7xl mx-auto">
+        <div className="md:w-1/2 space-y-6">
+          <h1 className="text-4xl md:text-5xl font-bold">Timeless Elegance</h1>
+          <p className="text-lg text-gray-600 dark:text-gray-300">
+            Discover our collection of classic and modern watches. Crafted with precision and designed to last.
+          </p>
+          <button
+            onClick={() => navigate('/products/watches')}
+            className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg transition"
+          >
+            Explore Watches
+          </button>
+        </div>
+
+        <div className="md:w-1/2 mb-10 md:mb-0">
+          <img src="/images/watch-main.avif" alt="Watches" className="rounded-xl shadow-lg" />
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default WatchHero;
