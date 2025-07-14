@@ -22,7 +22,7 @@ const AdminProductList = () => {
 
   const fetchProducts = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/admin/products');
+      const res = await axios.get('https://ab7dae03-a654-4f5e-b84e-6b7924e2581c-00-etotsp6h5au4.sisko.replit.dev/api/admin/products');
       setProducts(res.data);
     } catch (err) {
       toast.error("Failed to load products");
@@ -42,10 +42,10 @@ const AdminProductList = () => {
 
     try {
       if (editingId) {
-        await axios.put(`http://localhost:5000/api/admin/products/${editingId}`, data);
+        await axios.put(`https://ab7dae03-a654-4f5e-b84e-6b7924e2581c-00-etotsp6h5au4.sisko.replit.dev/api/admin/products/${editingId}`, data);
         toast.success('Product updated');
       } else {
-        await axios.post('http://localhost:5000/api/admin/products', data);
+        await axios.post('https://ab7dae03-a654-4f5e-b84e-6b7924e2581c-00-etotsp6h5au4.sisko.replit.dev/api/admin/products', data);
         toast.success('Product added');
       }
       setForm({ name: '', price: '', category: '', subcategory: '', quantity: '', description: '', image: null });
