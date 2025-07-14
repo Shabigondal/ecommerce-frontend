@@ -7,7 +7,7 @@ const Profile = () => {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/user/me', {
+        const res = await axios.get('https://ab7dae03-a654-4f5e-b84e-6b7924e2581c-00-etotsp6h5au4.sisko.replit.dev/api/user/me', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`,
           },
