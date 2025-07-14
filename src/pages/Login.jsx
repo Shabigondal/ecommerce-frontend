@@ -18,7 +18,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/login', formData);
+      const res = await axios.post('https://ab7dae03-a654-4f5e-b84e-6b7924e2581c-00-etotsp6h5au4.sisko.replit.dev/api/auth/login', formData);
       const { token, user } = res.data;
 
       localStorage.setItem('token', token);
@@ -44,7 +44,7 @@ const Login = () => {
 
   const resendOTP = async () => {
     try {
-      await axios.post('http://localhost:5000/api/auth/resend-otp', {
+      await axios.post('https://ab7dae03-a654-4f5e-b84e-6b7924e2581c-00-etotsp6h5au4.sisko.replit.dev/api/auth/resend-otp', {
         email: formData.email,
       });
       toast.success('OTP sent again');
