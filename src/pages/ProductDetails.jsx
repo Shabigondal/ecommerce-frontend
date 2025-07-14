@@ -10,14 +10,14 @@ const ProductDetail = () => {
   const { addToCart } = useContext(CartContext);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/products/${id}`)
+    fetch(`https://ab7dae03-a654-4f5e-b84e-6b7924e2581c-00-etotsp6h5au4.sisko.replit.dev/api/products/${id}`)
       .then(res => res.json())
       .then(data => setProduct(data))
       .catch(err => console.error('Error fetching product:', err));
   }, [id]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/reviews/${id}`)
+    fetch(`https://ab7dae03-a654-4f5e-b84e-6b7924e2581c-00-etotsp6h5au4.sisko.replit.dev/api/reviews/${id}`)
       .then(res => res.json())
       .then(data => setReviews(data))
       .catch(err => console.error('Error fetching reviews:', err));
@@ -32,7 +32,7 @@ const ProductDetail = () => {
       {/* Product Detail Section */}
       <div className="grid md:grid-cols-2 gap-8">
         <img
-          src={`http://localhost:5000/images/${product.image}`}
+          src={`https://ab7dae03-a654-4f5e-b84e-6b7924e2581c-00-etotsp6h5au4.sisko.replit.dev/images/${product.image}`}
           alt={product.name}
           className="w-full h-80 object-cover rounded shadow"
         />
