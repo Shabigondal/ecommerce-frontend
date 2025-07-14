@@ -11,7 +11,7 @@ const Products = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        let url = 'http://localhost:5000/api/products';
+        let url = 'https://ab7dae03-a654-4f5e-b84e-6b7924e2581c-00-etotsp6h5au4.sisko.replit.dev/api/products';
         if (filter !== 'all') {
           url += `/category/${filter}`;
         }
