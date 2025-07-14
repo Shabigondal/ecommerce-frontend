@@ -12,7 +12,7 @@ const AdminOrderList = () => {
 
   const fetchOrders = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/admin/orders');
+      const res = await axios.get('https://ab7dae03-a654-4f5e-b84e-6b7924e2581c-00-etotsp6h5au4.sisko.replit.dev/api/admin/orders');
       setOrders(res.data);
     } catch {
       console.error('Failed to load orders');
@@ -21,7 +21,7 @@ const AdminOrderList = () => {
 
   const updateStatus = async (id, newStatus) => {
     try {
-      await axios.put(`http://localhost:5000/api/admin/orders/${id}`, { status: newStatus });
+      await axios.put(`https://ab7dae03-a654-4f5e-b84e-6b7924e2581c-00-etotsp6h5au4.sisko.replit.dev/api/admin/orders/${id}`, { status: newStatus });
       fetchOrders();
     } catch {
       alert('Failed to update status');
