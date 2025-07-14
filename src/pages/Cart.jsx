@@ -57,7 +57,7 @@ const Cart = () => {
       className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-4 flex flex-col md:flex-row items-start md:items-center md:justify-between gap-4 hover:shadow-lg transition"
     >
       <img
-        src={`http://localhost:5000/images/${item.image}`}
+        src={`https://ab7dae03-a654-4f5e-b84e-6b7924e2581c-00-etotsp6h5au4.sisko.replit.dev/images/${item.image}`}
         alt={item.name}
         className="w-full md:w-28 h-40 md:h-28 object-cover rounded border"
       />
