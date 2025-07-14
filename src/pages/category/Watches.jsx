@@ -46,7 +46,7 @@ const Watches = () => {
       <div className="p-6 max-w-7xl mx-auto dark:bg-gray-900">
         {/* Filter Bar */}
         <div className="flex flex-wrap items-center justify-between mb-6 gap-4">
-          <h2 className="text-2xl font-bold">Available Watches</h2>
+          <h2 className="text-2xl font-bold dark:text-white">Available Watches</h2>
 
         <div className="flex items-center flex-wrap gap-2 sm:gap-4">
   <div className="flex items-center gap-1 sm:gap-2">
