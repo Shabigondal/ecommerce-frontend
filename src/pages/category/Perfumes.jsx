@@ -11,7 +11,7 @@ const Perfumes = () => {
   const [subcategory, setSubcategory] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/products/category/perfume')
+    axios.get('https://ab7dae03-a654-4f5e-b84e-6b7924e2581c-00-etotsp6h5au4.sisko.replit.dev/api/products/category/perfume')
       .then(res => {
         setProducts(res.data);
         setFiltered(res.data);
