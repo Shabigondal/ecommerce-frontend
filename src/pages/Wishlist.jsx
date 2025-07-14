@@ -56,7 +56,7 @@ const Wishlist = () => {
               </div>
             </div>
             <img
-              src={`http://localhost:5000/images/${item.image}`}
+              src={`https://ab7dae03-a654-4f5e-b84e-6b7924e2581c-00-etotsp6h5au4.sisko.replit.dev/images/${item.image}`}
               alt={item.name}
               className="w-full md:w-24 h-40 md:h-24 object-cover rounded border"
             />
